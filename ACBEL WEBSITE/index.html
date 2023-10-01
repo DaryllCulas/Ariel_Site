@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AcBel 康舒科技</title>
+  <link rel="stylesheet" href="mycss.css">
+  <link rel="icon" type="image/x-icon" href="images/acbellogo2.png">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="index.html"><img src="acbellogo.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="loginform.html">LOG IN</a></li>
+        <li><a href="thecreator.html">THE CREATOR</a></li>
+      </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>We power the world<br>with <span>Renewable & Sustainable Energy</span></h2>
+            <p>Established in 1981, AcBel Polytech Inc. has recognized
+            innovation,<br>harmony and transcendence as our business
+            philosophy, and we<br>always put customer satisfaction as
+            the first priority. Through constant innovations and
+            market exploration, AcBel has become one of the leading
+            developers, manufactures and sellers of power management
+            solutions in the world and our solutions are applied to the products of a number of industry leaders.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="imgBox">
+            <img src="acbel1.png" class="acbel"
+          </div>
+        </div>
+        <ul class="thumb">
+        <li><img src="thumb1.png" onclick="imgSlider('acbel1.png');changeCircleColor('#a2d2ff')"></li>
+        <li><img src="thumb2.png" onclick="imgSlider('acbel2.png');changeCircleColor('#f7941d')"></li>
+        <li><img src="thumb3.png" onclick="imgSlider('acbel3.png');changeCircleColor('#8093f1')"></li>
+        </ul>
+
+        </div>
+        <ul class="sci">
+          <li><a href="https://www.facebook.com/linshikwuuun/"><img src="facebook.png"></a></li>
+          <li><a href="#"><img src="twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/wingdums/?hl=en"><img src="instagram.png"></a></li>
+        </ul>
+    </header>
+  </section>
+
+
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.acbel').src = anything;
+    }
+
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+</body>
+</html>
